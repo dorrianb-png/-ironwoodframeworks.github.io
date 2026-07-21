@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #111111;
+    color: #e8e4dc;
+    line-height: 1.7;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.9)
+    );
+}
+
+
+.logo {
+    width: min(80%, 420px);
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    letter-spacing: 2px;
+    margin: 25px 0 10px;
+    text-transform: uppercase;
+}
+
+
+.hero p {
+    font-size: 20px;
+    color: #c49a5a;
+    max-width: 700px;
+}
+
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #b88a4a;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+
+.button:hover {
+    background: #d0a968;
+}
+
+
+/* SECTIONS */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+
+h2 {
+    color: #c49a5a;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+
+.card {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #b88a4a;
+}
+
+
+.card h3 {
+    color: #c49a5a;
+    font-size: 24px;
+}
+
+
+/* ABOUT / PROJECTS */
+
+.about,
+.projects,
+.intro {
+    text-align: center;
+}
+
+
+.contact {
+    text-align: center;
+    background: #191919;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #0b0b0b;
+    color: #999;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+section {
+    padding: 45px 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+}
